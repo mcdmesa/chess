@@ -1,0 +1,37 @@
+
+Board
+  invalid moves
+  8x8 board
+  initialize with pieces or emptysquares
+
+  moves pieces (start,end)
+    raise exception if start hold emptysquares
+    checks if valid move
+    copy piece to new position
+    replace with emptysquare to old position
+
+  board deep_dup pieces for checks and checkmate
+
+  check and checkmate?
+
+Display
+  pass a copy of the board to display
+  render clear
+  colorize board
+  loop through the board and render base on element
+
+Pieces
+  color
+  move set #contains possible moves
+  occupy? #flag
+  valid move pieces
+
+Game
+  Display
+  until game over?
+  user's input
+  board.check move?
+  if valid pieces move
+  elsif ask for different position?
+  switch color #color instance
+  game over method that checks for checkmate
